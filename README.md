@@ -19,5 +19,6 @@ For each depth, the model calculates:
 
 The result is a depth profile showing how fluid saturations shift around the contact levels.
 
-<img width="640" height="480" alt="brooks_corey_animation" src="https://github.com/user-attachments/assets/3d105fc3-1327-4eea-b4e0-24678333f0db" />
+<img width="640" height="480" alt="brooks_corey_animation" src="https://github.com/user-attachments/assets/886c008b-216e-4f16-8090-62c700015e67" />
+
 
