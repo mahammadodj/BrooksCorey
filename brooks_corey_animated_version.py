@@ -112,8 +112,8 @@ def animate_saturation_plot():
     text(0.9, GOC - 6, 'GOC', verticalalignment='center', fontsize=12)
     ax.axhline(y=WOC, linestyle='--', color='black')
     text(0.9, WOC - 6, 'WOC', verticalalignment='center', fontsize=12)
-    ax.set_xlabel('Depths [ft]')
-    ax.set_ylabel('Phase Saturation')
+    ax.set_xlabel('Phase Saturation')
+    ax.set_ylabel('Depth, ft')
     ax.set_title('Fluid Saturation vs Depth')
     ax.legend()
 
