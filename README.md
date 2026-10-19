@@ -8,6 +8,8 @@ The script estimates phase behavior across a vertical depth interval using the f
 
 - `WOC`: water-oil contact depth
 - `GOC`: gas-oil contact depth
+- 'FWL' - free water level
+- 'FGL' - free gas level
 - fluid densities for the aqueous and oil phases
 - capillary entry pressure and fluid property parameters
 
@@ -19,7 +21,8 @@ For each depth, the model calculates:
 
 The result is a depth profile showing how fluid saturations shift around the contact levels.
 
-![Uploading saturation_pressure_vs_depth.gif…]()
+<img width="960" height="640" alt="saturation_pressure_vs_depth" src="https://github.com/user-attachments/assets/f2d4b272-4f1a-4919-89ad-f3b261929efe" />
+
 
 
 
