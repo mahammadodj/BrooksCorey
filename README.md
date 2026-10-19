@@ -8,8 +8,8 @@ The script estimates phase behavior across a vertical depth interval using the f
 
 - `WOC`: water-oil contact depth
 - `GOC`: gas-oil contact depth
-- 'FWL' - free water level
-- 'FGL' - free gas level
+- `FWL` - free water level
+- `FGL` - free gas level
 - fluid densities for the aqueous and oil phases
 - capillary entry pressure and fluid property parameters
 
