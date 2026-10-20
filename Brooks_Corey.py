@@ -59,7 +59,6 @@ class ReservoirModel:
         Po_GOC = Po_WOC + self.ro_oleic * self.g * (self.GOC - self.WOC)
 
         # Gas density evaluated at the actual oil pressure at the GOC
-        # (the original rounding up to the next 100 psi was removed)
         T_rankine = self.T + 459.67
         ro_g = (Po_GOC * self.M_gas) / (self.Z * self.R * T_rankine)
 
