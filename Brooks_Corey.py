@@ -37,7 +37,7 @@ class ReservoirModel:
         self.GOC = GOC
 
     # ------------------------------------------------------------------
-    # Entry pressures (Leverett-type IFT scaling)
+    # Entry pressures
     # ------------------------------------------------------------------
     def calculate_entry_pressures(self):
         Pe_ow = self.Pe_ow
@@ -112,9 +112,8 @@ class ReservoirModel:
             return 1.0
         return self.Swirr + (1 - self.Swirr) * (Pc / Pe) ** (-self._lambda)
 
-    # ------------------------------------------------------------------
+   
     # Saturations at any depth
-    # ------------------------------------------------------------------
     def calculate_saturations(self, Depth, Po, Pw, Pg):
         Pe_ow, Pe_og, _ = self.calculate_entry_pressures()
 
@@ -188,6 +187,7 @@ if __name__ == "__main__":
         np.array(Sw_) + np.array(So_) + np.array(Sg_),
         1.0
     ), "Saturations do not sum to 1"
+    
 
     # -------------------------------
     # Plot saturations
@@ -217,6 +217,7 @@ if __name__ == "__main__":
     plt.grid(alpha=0.3)
     plt.tight_layout()
     plt.show()
+    
 
     # -------------------------------
     # Plot pressures
