@@ -21,10 +21,13 @@ The result is a depth profile showing how fluid saturations shift around the con
 
 <img width="960" height="640" alt="saturation_pressure_vs_depth" src="https://github.com/user-attachments/assets/f2d4b272-4f1a-4919-89ad-f3b261929efe" />
 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
+<img width="2560" height="1632" alt="phase_zones_explained (1)" src="https://github.com/user-attachments/assets/aae9ef61-b8d2-472f-a82d-0947442a93b8" />
 
 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
