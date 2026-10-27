@@ -114,14 +114,16 @@ class ReservoirModel:
    
     # Saturations at any depth
     def calculate_saturations(self, Depth, Po, Pw, Pg):
-        Pe_ow, Pe_og, _ = self.calculate_entry_pressures()
-
-        Sw = self._brooks_corey(Po - Pw, Pe_ow)   # water saturation (oil-water Pc)
-        Sl = self._brooks_corey(Pg - Po, Pe_og)   # total liquid saturation (gas-oil Pc)
-        Sl = max(Sl, Sw)                          # liquid can never be less than water
-
-        So = Sl - Sw
-        Sg = 1 - Sl
+        Pe_ow, Pe_og, Pe_wg = self.calculate_entry_pressures()
+    
+        Sw = self._brooks_corey(Po - Pw, Pe_ow)
+        Sl = self._brooks_corey(Pg - Po, Pe_og)
+    
+        if Sl >= Sw:                       # oil present (or water zone)
+            So, Sg = Sl - Sw, 1 - Sl
+        else:                              # oil exhausted: gas displaces water directly
+            Sw = self._brooks_corey(Pg - Pw, Pe_wg)
+            So, Sg = 0.0, 1 - Sw
         return Sw, So, Sg
 
 
