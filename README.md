@@ -39,7 +39,8 @@ A 3D scene:
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Used formulas:
 
-<img width="3200" height="2120" alt="image" src="https://github.com/user-attachments/assets/c4838b25-5765-4719-b60b-2b737dabcfec" />
+<img width="3200" height="2120" alt="image" src="https://github.com/user-attachments/assets/8f69880a-8d50-41d2-8151-f3c0f6102ebb" />
+
 
 
 
